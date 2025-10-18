@@ -11,13 +11,13 @@ Aplikasi ini adalah sebuah *Task Manager* sederhana berbasis web yang dirancang 
 Berikut adalah beberapa tampilan dari aplikasi:
 
 **1. Form Tambah Tugas**
-![Menampilkan form untuk memasukkan detail tugas baru](gambar1_web1)
+![Menampilkan form untuk memasukkan detail tugas baru](gambar1_web1.png)
 
 **2. Tampilan Utama dengan Daftar Tugas**
-![Menampilkan daftar tugas yang belum selesai dan yang sudah selesai](gambar2_web1)
+![Menampilkan daftar tugas yang belum selesai dan yang sudah selesai](gambar2_web1.png)
 
 **3. Tampilan Filter Aktif**
-![Menampilkan hasil setelah memfilter menggunakan filter status tugas atau pencarian](gambar3_web1)
+![Menampilkan hasil setelah memfilter menggunakan filter status tugas atau pencarian](gambar3_web1.png)
 
 ---
 
