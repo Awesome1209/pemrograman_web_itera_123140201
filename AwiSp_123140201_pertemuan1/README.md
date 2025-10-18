@@ -11,15 +11,13 @@ Aplikasi ini adalah sebuah *Task Manager* sederhana berbasis web yang dirancang 
 Berikut adalah beberapa tampilan dari aplikasi:
 
 **1. Form Tambah Tugas**
-*(Menampilkan form untuk memasukkan detail tugas baru)*
-`` AwiSp_123140201_pertemuan1/gambar1_web1.png
+![Menampilkan form untuk memasukkan detail tugas baru](gambar1_web1)
+
 **2. Tampilan Utama dengan Daftar Tugas**
-*(Menampilkan daftar tugas yang belum selesai dan yang sudah selesai)*
-``
+![Menampilkan daftar tugas yang belum selesai dan yang sudah selesai](gambar2_web1)
 
 **3. Tampilan Filter Aktif**
-*(Menampilkan hasil setelah memfilter menggunakan status tugas atau pencarian")*
-``
+![Menampilkan hasil setelah memfilter menggunakan filter status tugas atau pencarian](gambar3_web1)
 
 ---
 
