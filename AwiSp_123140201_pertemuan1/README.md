@@ -12,8 +12,7 @@ Berikut adalah beberapa tampilan dari aplikasi:
 
 **1. Form Tambah Tugas**
 *(Menampilkan form untuk memasukkan detail tugas baru)*
-`` (gambar1_web1)
-
+`` AwiSp_123140201_pertemuan1/gambar1_web1.png
 **2. Tampilan Utama dengan Daftar Tugas**
 *(Menampilkan daftar tugas yang belum selesai dan yang sudah selesai)*
 ``
