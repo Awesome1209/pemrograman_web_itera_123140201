@@ -10,16 +10,16 @@ Aplikasi ini adalah sebuah *Task Manager* sederhana berbasis web yang dirancang 
 
 Berikut adalah beberapa tampilan dari aplikasi:
 
-**1. Tampilan Utama dengan Daftar Tugas**
+**1. Form Tambah Tugas**
+*(Menampilkan form untuk memasukkan detail tugas baru)*
+`` (gambar1_web1)
+
+**2. Tampilan Utama dengan Daftar Tugas**
 *(Menampilkan daftar tugas yang belum selesai dan yang sudah selesai)*
 ``
 
-**2. Tampilan Filter Aktif**
-*(Menampilkan hasil setelah memfilter tugas yang "Selesai")*
-``
-
-**3. Form Tambah Tugas**
-*(Menampilkan form untuk memasukkan detail tugas baru)*
+**3. Tampilan Filter Aktif**
+*(Menampilkan hasil setelah memfilter menggunakan status tugas atau pencarian")*
 ``
 
 ---
@@ -39,14 +39,14 @@ Berikut adalah beberapa tampilan dari aplikasi:
 
 ## 🔧 Penjelasan Teknis
 
-Aplikasi ini dibangun murni menggunakan HTML, CSS, dan JavaScript (*vanilla JS*) tanpa *framework* eksternal.
+**Aplikasi ini dibangun murni menggunakan HTML, CSS, dan JavaScript (*vanilla JS*) tanpa *framework* eksternal.**
 
-### Penggunaan `localStorage`
-Data tugas disimpan dalam format JSON di `localStorage` browser, memastikan data tetap ada saat aplikasi dibuka kembali.
-
-### Validasi Form
-Form memiliki validasi sederhana untuk memastikan semua input terisi sebelum tugas ditambahkan.
-
+**Penggunaan `localStorage`**
+*Data tugas disimpan dalam format JSON di `localStorage` browser, memastikan data tetap ada saat aplikasi dibuka kembali.*
+``
+**Validasi Form**
+*Form memiliki validasi sederhana untuk memastikan semua input terisi sebelum tugas ditambahkan.*
+``
 ---
 
 ## 🚀 Cara Menjalankan Aplikasi
