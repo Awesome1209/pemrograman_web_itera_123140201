@@ -40,11 +40,9 @@ Berikut adalah beberapa tampilan dari aplikasi:
 
 **Penggunaan `localStorage`**
 *Data tugas disimpan dalam format JSON di `localStorage` browser, memastikan data tetap ada saat aplikasi dibuka kembali.*
-``
 
 **Validasi Form**
 *Form memiliki validasi sederhana untuk memastikan semua input terisi sebelum tugas ditambahkan.*
-``
 
 ---
 
