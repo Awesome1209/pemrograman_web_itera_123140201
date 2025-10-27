@@ -1,0 +1,120 @@
+/* Kita set variabel warna di :root biar bisa dipakai di mana-mana */
+:root {
+    --bg-color: #f4f7f6;
+    --widget-bg: #ffffff;
+    --text-color: #333;
+    --border-color: #e0e0e0;
+    --primary-color: #007bff;
+    --secondary-color: #6c757d; 
+    --danger-color: #dc3545;
+}
+
+/* Reset dasar */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+    color: #444;
+}
+
+/* Ini kontainer utama buat nampung semua widget */
+.dashboard-container {
+    display: flex;
+    flex-wrap: wrap; /* Biar responsif kalo layarnya kecil */
+    justify-content: center;
+    gap: 20px; /* Jarak antar widget */
+}
+
+/* Ini tampilan "kartu" buat tiap widget */
+.widget {
+    background-color: var(--widget-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    /* Efek bayangan biar kayak kartu */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); 
+    width: 350px; /* Lebar widget */
+    min-height: 150px;
+}
+
+/* Styling buat widget waktu */
+#widget-waktu #info-waktu {
+    font-size: 2rem; /* 2x ukuran font normal */
+    font-weight: 500;
+    text-align: center;
+    color: var(--primary-color);
+    margin: 20px 0;
+}
+
+/* Styling buat form tugas */
+#form-tugas {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#input-tugas {
+    flex-grow: 1; /* Biar inputnya menuhin sisa tempat */
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+#form-tugas button {
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Styling buat list tugasnya */
+#list-tugas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#list-tugas li {
+    display: flex;
+    justify-content: space-between; /* Biar teks di kiri, tombol di kanan */
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Kontainer untuk tombol-tombol aksi */
+.tugas-actions {
+    display: flex;
+    gap: 5px; /* Jarak antar tombol edit dan hapus */
+}
+
+/* Tombol Edit */
+#list-tugas .edit-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 8px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+/* Tombol hapus */
+#list-tugas .hapus-btn {
+    background-color: var(--danger-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 8px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: bold;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Personal Dashboard Saya</h1>
+    </header>
+
+    <main class="dashboard-container">
+        
+        <div class="widget" id="widget-waktu">
+            <h2>Waktu Jakarta</h2>
+            <p id="info-waktu">Memuat...</p> 
+        </div>
+
+        <div class="widget" id="widget-tugas">
+            <h2>Daftar Tugas</h2>
+            <form id="form-tugas">
+                <input 
+                    type="text" 
+                    id="input-tugas" 
+                    placeholder="Mau ngerjain apa hari ini?" 
+                    required 
+                />
+                <button type="submit">Tambah</button>
+            </form>
+            
+            <ul id="list-tugas">
+                </ul>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
