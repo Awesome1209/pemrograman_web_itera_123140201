@@ -3,38 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Dashboard</title>
+    <title>Cyberpunk Schedule Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>Personal Dashboard Saya</h1>
+        <h1>DASHBOARD PRIBADI AWI</h1>
+        <p>Atur jadwal pribadimu dengan gaya.</p>
     </header>
 
-    <main class="dashboard-container">
-        
-        <div class="widget" id="widget-waktu">
-            <h2>Waktu Jakarta</h2>
-            <p id="info-waktu">Memuat...</p> 
-        </div>
+    <main>
+        <section class="form-container">
+            <h3>Tambah/Edit Jadwal</h3>
+            <form id="schedule-form">
+                <input type="hidden" id="schedule-id">
+                
+                <div class="form-group">
+                    <label for="schedule-name">Nama Kegiatan</label>
+                    <input type="text" id="schedule-name" required>
+                </div>
 
-        <div class="widget" id="widget-tugas">
-            <h2>Daftar Tugas</h2>
-            <form id="form-tugas">
-                <input 
-                    type="text" 
-                    id="input-tugas" 
-                    placeholder="Mau ngerjain apa hari ini?" 
-                    required 
-                />
-                <button type="submit">Tambah</button>
+                <div class="form-grid-col-2">
+                    <div class="form-group">
+                        <label for="schedule-priority">Prioritas</label>
+                        <select id="schedule-priority" required>
+                            <option value="rendah">Rendah</option>
+                            <option value="sedang">Sedang</option>
+                            <option value="tinggi">Tinggi</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="schedule-category">Kategori</label>
+                        <select id="schedule-category" required>
+                            <option value="penting">Acara Penting</option>
+                            <option value="sekolah">Sekolah</option>
+                            <option value="tugas">Tugas</option>
+                            <option value="kerja">Kerja</option>
+                            <option value="pribadi">Pribadi</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="schedule-datetime">Waktu</label>
+                    <input type="datetime-local" id="schedule-datetime" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="schedule-description">Deskripsi Singkat</label>
+                    <textarea id="schedule-description" rows="3"></textarea>
+                </div>
+                
+                <button type="submit" id="submit-btn" class="glow-btn">Simpan Jadwal</button>
             </form>
-            
-            <ul id="list-tugas">
-                </ul>
-        </div>
+        </section>
 
+        <section class="list-container">
+            <h3>Daftar Jadwal Anda</h3>
+            
+            <div class="schedule-list-header">
+                <div class="col-detail">Detail Kegiatan</div>
+                <div class="col-meta">Status</div>
+                <div class="col-action">Aksi</div>
+            </div>
+
+            <div id="schedule-list">
+                </div>
+        </section>
     </main>
 
     <script src="script.js"></script>
