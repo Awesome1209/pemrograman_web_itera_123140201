@@ -36,8 +36,10 @@ Ini memastikan bahwa semua daftar kegiatan Anda akan tetap tersimpan di browser 
 ## Tampilan Aplikasi
 
 **1. Beranda / Dashboard**
+![Menampilkan Dashboard](p2_Dashboard.png)
 
 **2. Jadwal Kegiatan**
+![Menampilkan Jadwal Kegiatan](p2_JadawalKegiatan.png)
 
 ---
 
