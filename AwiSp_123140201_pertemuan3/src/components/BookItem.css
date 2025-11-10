@@ -1,0 +1,47 @@
+.book-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ecf0f1;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background-color: #fafafa;
+}
+
+.book-item:hover {
+  background-color: #fdfdfd;
+}
+
+.book-info {
+  flex-grow: 1;
+}
+
+.book-info h3 {
+  margin: 0 0 5px 0;
+}
+
+.book-info p {
+  margin: 0;
+  color: #555;
+  font-style: italic;
+}
+
+.book-status .status {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.85em;
+  color: white;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.status.beli { background-color: #007bff; }
+.status.baca { background-color: #ffc107; color: #333; }
+.status.milik { background-color: #28a745; }
+
+.book-actions {
+  display: flex;
+  gap: 10px;
+  margin-left: 20px;
+}

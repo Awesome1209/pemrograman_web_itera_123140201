@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajemen Tugas Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>📝 Manajemen Tugas Kuliah</h1>
+            <p>Atur semua tugas akademikmu di satu tempat.</p>
+        </header>
+
+        <main>
+            <section class="task-form-section">
+                <h2>Tambah Tugas Baru</h2>
+                <form id="task-form">
+                    <div class="form-group">
+                        <label for="task-name">Nama Tugas</label>
+                        <input type="text" id="task-name" placeholder="Contoh: Laporan Praktikum Jaringan Komputer" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="course-name">Mata Kuliah</label>
+                        <input type="text" id="course-name" placeholder="Contoh: Jaringan Komputer" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="deadline">Deadline</label>
+                        <input type="date" id="deadline" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Tambah Tugas</button>
+                </form>
+            </section>
+
+            <section class="task-list-section">
+                <div class="list-header">
+                    <h2>Daftar Tugas (<span id="incomplete-count">0</span> belum selesai)</h2>
+                    <div class="filter-controls">
+                        <input type="text" id="search-input" placeholder="Cari tugas...">
+                        <select id="filter-status">
+                            <option value="all">Semua Status</option>
+                            <option value="incomplete">Belum Selesai</option>
+                            <option value="completed">Selesai</option>
+                        </select>
+                    </div>
+                </div>
+                <ul id="task-list" class="task-list">
+                    </ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
